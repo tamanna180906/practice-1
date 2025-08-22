@@ -57,15 +57,15 @@ function NewArrivals() {
                   <div className='w-full right-0 bottom-0 p-[20px] absolute bg-[#FFFFFF] opacity-0 group-hover:opacity-100
                                  duration-300 ease-in-out'>
                     <div className='flex justify-end gap-3 items-center'>
-                      <p className='text-[#767676] text-[16px] font-dm '>Add to Wish List</p>
+                      <p className='text-[#767676] text-[16px] font-dm hover:text-[#262626] hover:font-semibold'>Add to Wish List</p>
                       <FaHeart />
                     </div>
-                    <div className='flex justify-end pt-3 gap-3 items-center'>
-                      <p className='text-[#767676] text-[16px] font-dm '>Compare</p>
+                    <div className='flex justify-end gap-3 items-center pt-3'>
+                      <p className='text-[#767676] text-[16px] font-dm hover:text-[#262626] hover:font-semibold'>Compare</p>
                       <HiOutlineRefresh />
                     </div>
-                    <div className='flex justify-end items-center gap-3 pt-3'>
-                      <p className='font-bold text-[16px] font-dm'>Add to Cart</p>
+                    <div className='flex justify-end gap-3 items-center pt-3'>
+                      <p className=' text-[#767676] text-[16px] font-dm hover:text-[#262626] hover:font-semibold'>Add to Cart</p>
                       <FaShoppingCart />
                     </div>
                   </div>
