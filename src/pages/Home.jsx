@@ -6,6 +6,7 @@ import Icone from '../components/Icone'
 import Footer from '../components/Footer'
 import Sale from '../components/Sale'
 import Offers from '../components/Offers'
+import NewArrivals from '../components/NewArrivals'
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
     <Banner/>
     <Icone/>
     <Sale/>
+    <NewArrivals/>
     <Offers/>
     <Footer/>
     </>
