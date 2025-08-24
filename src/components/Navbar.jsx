@@ -19,10 +19,10 @@ function Navbar() {
                          ${show==true?"bg-[#D8D8D8] ":
                              "mt-[-200px] lg:mt-0"}`}>
                             <li className='font-[14px] text-[#767676] font-dm hover:text-[#262626]'>
-                                Home
+                                <Link to="/">Home</Link>
                             </li>
                             <li className='font-[14px] text-[#767676] font-dm hover:text-[#262626]'>
-                                Shop
+                                <Link to="/shop">Shop</Link>
                             </li>
                             <li className='font-[14px] text-[#767676] font-dm hover:text-[#262626]'>About</li>
                             <li className='font-[14px] text-[#767676] font-dm hover:text-[#262626]'>Contacts</li>

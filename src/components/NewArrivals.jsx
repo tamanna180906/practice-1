@@ -1,6 +1,6 @@
 import React from 'react'
 import Container from './Container'
-import { data } from 'react-router-dom'
+import { data, Link } from 'react-router-dom'
 import { useContext } from 'react'
 import { ApiData } from './ContexApi'
 import { FaHeart } from 'react-icons/fa6'
@@ -30,7 +30,7 @@ function SamplePrevArrow(props) {
 }
 
 function NewArrivals() {
-  let data = useContext(ApiData)
+  let {info,loading} = useContext(ApiData)
   var settings = {
     dots: false,
     infinite: false,
@@ -43,6 +43,15 @@ function NewArrivals() {
   }
 
 
+  if(loading){
+    return(
+      <>
+      <h2>loading...</h2>
+      </>
+    )
+  }
+
+
 
   return (
     <Container>
@@ -50,10 +59,12 @@ function NewArrivals() {
         <h2 className='text-[39px] font-bold font-dm'>New Arrivals</h2>
         <div className='lg:pt-10'>
           <Slider {...settings}>
-            {data.map((item) => (
+            {info.map((item) => (
               <div className='lg:w-3/12 w-6/12 pr-4 relative'>
                 <div className=' relative group'>
+                  <Link to="/shop">
                   <img src={item.thumbnail} className='w-full'></img>
+                  </Link>
                   <div className='w-full right-0 bottom-0 p-[20px] absolute bg-[#FFFFFF] opacity-0 group-hover:opacity-100
                                  duration-300 ease-in-out'>
                     <div className='flex justify-end gap-3 items-center'>
